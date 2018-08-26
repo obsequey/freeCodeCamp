@@ -1,0 +1,49 @@
+font = 'Source Sans Pro', sans-serif
+hellocolor = #e1f5fe
+textcolor = #01579b
+secondarytextcolor = #0277bd
+textactive = #039be5
+projectscolor = #fff
+contactscolor = #b3e5fc
+footercolor = #81d4fa
+*
+  padding 0
+  margin 0
+  text-decoration none
+  list-style: none
+  color textcolor
+html
+  font-family: font
+  font-size 16px
+.navbar
+  position fixed
+  top 0
+  background-color hellocolor
+  width 100%
+  &__list
+    display flex
+    justify-content space-between
+    &__item
+      padding 1rem
+      &__link
+        transition color .3s ease-in-out
+        &:hover
+          color textactive
+main
+  .hello
+    height 100vh
+    display flex
+    align-items: center
+    justify-content: center
+    font-size 1.5rem
+    background-color: hellocolor
+    &__message
+      &__text
+        color secondarytextcolor
+  .projects
+    background-color projectscolor
+    display flex
+    flex-direction column
+    justify-content center
+    &__header
+      font-size 3rem
