@@ -3,11 +3,12 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  color: #01579b;
+  color: #4a6e7e;
 }
 html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 .navbar {
   position: fixed;
@@ -33,11 +34,10 @@ main .hello {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   background-color: #e1f5fe;
 }
 main .hello__message__text {
-  color: #0277bd;
+  color: #707a7e;
 }
 main .projects {
   background-color: #fff;
@@ -46,5 +46,29 @@ main .projects {
   justify-content: center;
 }
 main .projects__header {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  margin: 2rem 0 0 0;
+}
+main .projects__list__item {
+  margin: 2rem;
+  border: 1px solid #4a6e7e;
+  border-radius: 3px;
+  transition: color 0.3s ease-in-out;
+}
+main .projects__list__item:hover {
+  border-color: #039be5;
+  color: #039be5;
+}
+main .projects__list__item__link {
+  width: 100%;
+}
+main .projects__list__item__link__img {
+  width: 100%;
+}
+main .projects__list__item__link__header {
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+main .projects__list__item__link__header:hover {
+  color: #039be5;
 }
